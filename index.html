@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>主页</title>
+    <title>YANG的个人页面-首页</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+
+
     <style>
         div{
             width: 90%;
@@ -49,17 +52,38 @@
 <body>
 
     <ul class="topnav">
-        <li><a class="active" href="#home">主页</a></li>
-        <li><a href="#news">日常</a></li>
-        <li><a href="#contact">联系我</a></li>
-        <li class="right"><a href="#about">关于</a></li>
+        <li><a class="active" href="#home">首页</a></li>
+        <li><a href="#home">本人其他站点主页：</a></li>
+        <li><a href="https://blog.csdn.net/m0_46451927?spm=1000.2115.3001.10640">我的CSDN</a></li>
+        <li><a href="https://github.com/yangxishuang">我的GitHub</a></li>
+        <li><a href="https://space.bilibili.com/74408535?spm_id_from=333.1387.fans.user_card.click">我的bilibili</a></li>
+        <li class="right"><a href="pages/aboutme.html">联系我</a></li>
       </ul>
 
     <div>
         <h2>这是杨希双的Github域名，欢迎你的访问。</h2>
-        <h3>-----我们遇到了一些问题，亟待解决-----</h3>
-        <p>2023中国农历新年，因为一些意外导致本站丢失了部分链接文件，正在尝试解决</p>
+        <p>本人可编码语言：Java、C、C++、Python、PHP、HTML5、CSS3、JavaScript、GLSL</p>
+        <p>主修方向：Java Web开发、云计算与大数据分析、卷积神经网络、对抗生成等</p>
     </div>
+
+    <el-calendar v-model="value">
+    </el-calendar>
+
     
 </body>
+
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue@2/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    export default {
+      data() {
+        return {
+          value: new Date()
+        }
+      }
+    }
+  </script>
+
 </html>
