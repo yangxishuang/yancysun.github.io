@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YANG的个人页面-首页</title>
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-
-
     <style>
         div{
             width: 90%;
@@ -15,7 +13,6 @@
             text-align: center;
         }
 
-        
         /* 导航栏 */
         body {margin: 0;}
 
@@ -47,6 +44,26 @@
             ul.topnav li.right, 
             ul.topnav li {float: none;}
         }
+
+        .footer {
+            color: #505050;
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+            width: 100%;
+            /* height: 50px; */
+            background-color: #eee;
+            z-index: 9999;
+        }
+
+        .linkdiv :link, .linkdiv :visited{
+            text-decoration: none;
+            color: #4b4b4b;
+        }
+        .linkdiv :hover{
+            text-decoration: underline;
+            color: rgb(129, 127, 255);
+        }
     </style>
 </head>
 <body>
@@ -62,12 +79,21 @@
 
     <div>
         <h2>这是杨希双的Github域名，欢迎你的访问。</h2>
-        <p>本人可编码语言：Java、C、C++、Python、PHP、HTML5、CSS3、JavaScript、GLSL</p>
+        <p>本人编码语言：Java、C、C++、Python、PHP、HTML5、CSS3、JavaScript、GLSL</p>
         <p>主修方向：Java Web开发、云计算与大数据分析、卷积神经网络、对抗生成等</p>
     </div>
 
-    <el-calendar v-model="value">
-    </el-calendar>
+    <div class="footer">
+      <p class="linkdiv">友情链接：
+        <a href="https://next.itellyou.cn/Original/Index#">MSDN</a> | 
+        <a href="https://roms.miuier.com/zh-cn/">MIUI ROM仓库</a> | 
+        <a href="https://greasyfork.org/zh-CN">Greasy Fork</a> | 
+        <a href="http://hmcl.huangyuhui.net/download">HMCL</a> | 
+        <a href="https://socialclub.rockstargames.com/jobs/?dateRange=lastyear&missiontype=race&platform=pc&sort=likes&subtype=bikerace&title=gtav">RockStar差事列表</a>
+      </p>
+      <p>Copyright 2021-2025  ·  @Author/owner:<a href="https://blog.csdn.net/m0_46451927?spm=1000.2115.3001.10640">YangXishuang</a>  ·  AllRightsReserved.</p>
+      <p>本网站所列信息，除特殊说明，所有数据均出自个人编写</p>
+    </div>
 
     
 </body>
